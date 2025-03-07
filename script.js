@@ -1,1 +1,1 @@
-// write your JavaScript here
+'use strict';
