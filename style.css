@@ -7,3 +7,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-blue: hsla(224, 95%, 55%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --testimonial-card-inactive: (206, 17%, 92%, 1);
+    --footer-bg: hsla(224, 100%, 11%, 1);
+    --wire-color: hsla(258, 100%, 63%, 1);
+}
+
+.body-container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.nav-links, .nav-buttons, .top, .hero-left {
+    display: none;
+}
