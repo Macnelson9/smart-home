@@ -10,8 +10,8 @@
 :root {
     --primary-blue: hsla(224, 95%, 55%, 1);
     --white: hsla(0, 0%, 100%, 1);
-    --testimonial-card-inactive: (206, 17%, 92%, 1);
-    --footer-bg: hsla(224, 100%, 11%, 1);
+    --testimonial-card-inactive: hsla(206, 17%, 92%, 1);
+    --footer-bg: rgb(3, 3, 5);
     --wire-color: hsla(258, 100%, 63%, 1);
 }
 
@@ -181,7 +181,7 @@ i.fa-times {
 }
 
 .about-us-container h1 {
-    color: #161616;
+    color: #333333;
     margin-top: 15px;
     font-size: 3.4rem;
     text-align: center;
@@ -198,6 +198,11 @@ i.fa-times {
     margin: 0 auto;
     width: 90%;
 }
+
+.card--card2 img,
+.card--card3 img {
+    margin: auto 20px;
+}
 /* 
 .card-bg {
     background: var(--primary-blue);
@@ -209,3 +214,167 @@ i.fa-times {
     top: -200px;
     z-index: -1;
 } */
+
+.card-text--text1,
+.card-text--text2,
+.card-text--text3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-text--text1 h3,
+.card-text--text2 h3,
+.card-text--text3 h3 {
+    color: var(--footer-bg);
+    font-size: 2.7rem;
+}
+
+.card-text--text1 p,
+.card-text--text2 p,
+.card-text--text3 p {
+    color: rgb(110, 110, 110);
+    font-size: 1.1rem;
+}
+
+.card-text--text1 button, 
+.card-text--text2 button, 
+.card-text--text3 button {
+    background: none;
+    border: 1px solid var(--footer-bg);
+    color: var(--footer-bg);
+    border-radius: 7px;
+    font-size: 1.1rem; 
+    padding: 1.3rem 2.2rem;
+}
+
+.card-text--text1 button:hover,
+.card-text--text2 button:hover,
+.card-text--text3 button:hover {
+    background: var(--footer-bg);
+    color: var(--white);
+}
+
+/* Our clients section */
+.our-clients {
+    background: var(--white);
+    margin-top: 70px;
+}
+
+.our-clients-container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.our-clients-container h1 {
+    color: #333333;
+    font-size: 3.4rem;
+    text-align: center;
+}
+
+.our-clients-container p {
+    color: rgb(110, 110, 110);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.clients {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.1rem 0;
+    width: 100%;
+}
+
+/* Testimonials section */
+.testimonials {
+    background: var(--white);
+    margin-top: 30px;
+}
+
+.testimonials-container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.testimonials-container h1 {
+    color: #333333;
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonials-container p {
+    color: rgb(110, 110, 110);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 1.1rem 0;
+}
+
+.testimonial-card1, .testimonial-card2, .testimonial-card3, .testimonial-card4 {
+    background: var(--testimonial-card-inactive);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1.5rem;
+}
+
+.testimonial-text p {
+    color: gray;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.testimonial-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.testimonial-image img {
+    width: 15%;
+}
+
+.testifier h3 {
+    color: var(--footer-bg);
+    font-size: 1rem;
+}
+
+.testifier p {
+    color: rgb(192, 192, 192);
+    font-size: 0.8rem;
+}
+
+.testimonial-card1:hover, .testimonial-card2:hover, .testimonial-card3:hover, .testimonial-card4:hover {
+    background: var(--white);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Faqs Section */
+.faqs {
+    background: var(--white);
+    margin-top: 30px;
+}
+
+.faqs-container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.faqs-container h1 {
+    color: #333333;
+    font-size: 3.4rem;
+    text-align: center;
+}
