@@ -4,9 +4,14 @@
 const hamburgerBtn = document.getElementById('hamburger-btn');
 const closeBtn = document.getElementById('times-btn');
 const mobileNav = document.querySelector('.mobile-navigation');
+const loaderOverlay = document.querySelector('.loader-overlay');
+
+
 
 // Handle mobile navigation
 document.addEventListener('DOMContentLoaded', function () {
+    loaderOverlay.style.display = 'none';
+
     if (hamburgerBtn) {
         hamburgerBtn.addEventListener('click', () => {
             mobileNav.classList.add('show');
